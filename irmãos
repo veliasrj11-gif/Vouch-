@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carta Especial</title>
+<style>
+body {
+  background: #f7d046;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  max-width: 320px;
+}
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  background: #f7b500;
+  color: white;
+  font-size: 16px;
+}
+.message {
+  display: none;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h2>🎁 Voucher Especial</h2>
+  <p>Você recebeu um presente</p>
+  <button onclick="openCard()">Abrir carta</button>
+
+  <div class="message" id="msg">
+    💌 <br><br>
+    Parabéns! 🎉<br>
+    Você acaba de se tornar<br>
+    <strong>TITIO(A)</strong> 👶✨
+  </div>
+</div>
+
+<script>
+function openCard() {
+  document.getElementById('msg').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
